@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <style>
+        body {
+          background: rgb(204,204,204); 
+          width: 21cm;
+          height: 29.7cm;
+          margin: 0 auto;
+        }
+
+        page {
+          background: white;
+          display: block;
+          margin: 0 auto;
+          margin-bottom: 0.5cm;
+          position: relative;
+        }
+
+        page[size="A4"] {  
+          width: 21cm;
+          height: 29.7cm; 
+        }
+
+        @page {
+          size: 21cm 29.7cm;
+          margin: 0mm;
+        }
+      </style>
+   </head>
+   <body>
+      <page size="A4">
+      </page>
+      <page size="A4">
+      </page>
+   </body>
+</html>
+.container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+}
+.leftPanel {
+  width: 27%;
+  background-color: #484444;
+  padding: 0.7cm;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.rightPanel {
+  width: 73%;
+  padding: 0.7cm;
+}
+<page size="A4">
+  <div class="container">
+    <div class="leftPanel">
+    </div>
+    <div class="rightPanel">
+    </div>
+  </div>
+</page>
+.item {
+  padding-bottom: 0.7cm;
+  padding-top: 0.7cm;
+}
+.item h2{
+  margin-top: 0;
+}
+.bottomLineSeparator {
+  border-bottom: 0.05cm solid white;
+}
+h2 {
+  font-family: 'Archivo Narrow', sans-serif;
+}
+.leftPanel h2 {
+  color: white;
+}
+img {
+  width: 4cm;
+  height: 4cm;
+  margin-bottom: 0.7cm;
+  border-radius: 50%;
+  border: 0.15cm solid white;
+  object-fit: cover;
+  object-position: 50% 50%;
+}
+.details {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow&family=Julius+Sans+One&family=Open+Sans&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+<div class="leftPanel">
+  <img src="avatar.png"/>
+  <div class="details">
+    <div class="item bottomLineSeparator">
+      <h2>
+        CONTACT
+      </h2>
+    </div>
+    <div class="item bottomLineSeparator">
+      <h2>
+        SKILLS
+      </h2>
+    </div>
+    <div class="item">
+      <h2>
+        EDUCATION
+      </h2>
+    </div>
+  </div>
+</div>
+.leftPanel .smallText, 
+.leftPanel .smallText, 
+.leftPanel .smallText span, 
+.leftPanel .smallText p, 
+.smallText a {
+  font-size: 0.45cm;
+}
+.smallText, 
+.smallText span, 
+.smallText p, 
+.smallText a {
+  font-family: 'Source Sans Pro', sans-serif;
+  text-align: justify;
+}
+.contactIcon {
+  width: 0.5cm;
+  text-align: center;
+}
+.leftPanel, 
+.leftPanel a {
+  color: #bebebe;
+  text-decoration: none;
+}
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+<div class="item bottomLineSeparator">
+  <h2>
+    CONTACT
+  </h2>
+  <div class="smallText">
+    <p>
+      <i class="fa fa-phone contactIcon" aria-hidden="true"></i>
+      (+63)9229524657
+    </p>
+    <p>
+      <i class="fa fa-envelope contactIcon" aria-hidden="true"></i>
+      <a diannedizonbuhain.@gmail.com">
+        diannedizonbuhain.com
+      </a>
+    </p>
+    <p>
+      <i class="fa fa-map-marker contactIcon" aria-hidden="true"></i>
+      San Rafael,Bulacan
+    </p>
+    <p>
+      <i class="fa fa-linkedin-square contactIcon" aria-hidden="true"></i>
+      <a href="#">
+        in/
+      </a>
+    </p>
+    <p class="lastParagrafNoMarginBottom">
+      <i class="fa fa-skype contactIcon" aria-hidden="true"></i>
+      <a href="#">
+        
+      </a>
+    </p>
+  </div>
+</div>
+.skill {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.yearsOfExperience {
+  width: 1.6cm;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.alignleft {
+  text-align: left !important;
+  width: 1cm;
+}
+.alignright {
+  text-align: right !important;
+  width: 0.6cm;
+  margin-right: 0.1cm
+}
+<div class="item bottomLineSeparator">
+  <h2>
+    SKILLS
+  </h2>
+  <div class="smallText">
+    <div class="skill">
+      <div>
+        <span>sewing</span>
+      </div>
+      <div class="yearsOfExperience">
+        <span class="alignright">4</span>
+        <span class="alignleft">years</span>
+      </div>
+    </div>
+    <div class="skill">
+      <div>
+        <span>Word</span>
+      </div>
+      <div class="yearsOfExperience">
+        <span class="alignright">3</span>
+        <span class="alignleft">years</span>
+      </div>
+    </div>
+    <div class="skill">
+      <div>
+        <span>Powerpoint</span>
+      </div>
+      <div class="yearsOfExperience">
+        <span class="alignright">3</span>
+        <span class="alignleft">year</span>
+      </div>
+    </div>
+  </div>
+</div>
+.bolded {
+  font-weight: bold;
+}
+.white {
+  color: white;
+}
+<div class="item">
+  <h2>
+    EDUCATION
+  </h2>
+  <div class="smallText">
+    <p class="bolded white">
+      Maguinao Elementary School
+    </p>
+    <p>
+     <div class="item">
+  <h2>
+    EDUCATION
+  </h2>
+  <div class="smallText">
+    <p class="bolded white">
+      Carlos F. Gonzales High School
+    </p>
+    <p>
+      Maguinao Elementary School
+    </p>
+    <p>
+      2015 - 2020
+    </p>
+  </div>
+</div> 
+h1 { 
+  font-family: 'Julius Sans One', sans-serif;
+}
+h1 { 
+  font-weight: 300; 
+  font-size: 1.2cm;
+  transform:scale(1,1.15); 
+  margin-bottom: 0.2cm;
+  margin-top: 0.2cm;
+  text-transform: uppercase; 
+}
+h3 {
+  font-family: 'Open Sans', sans-serif;
+}
+<div class="rightPanel">
+  <div>
+    <h1>
+      Mhia Dianne D Buhain
+    </h1>
+    <div class="smallText">
+      <h3>
+        Bachelor of Science IN Information Technology 
+      </h3>
+    </div>
+  </div>
+</div>
+<div>
+  <h2>
+    About me
+  </h2>
+  <div class="smallText">
+    <p>
+      s
+    </p>
+    <p>
+      Hi i Am Mhia Dianne D. Buhain my expertise is creating a powerpoint,deisgning in canva and i doing it for 2 years i do motivate my self to to this and also i do my best for my responsibilities 
+    </p>
+  </div>
+</div>
+    
